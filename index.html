@@ -1,131 +1,300 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Doce Encanto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+    <title>Doce Sabor | Loja de Doces</title>
 
+    <meta name="description" content="Conheça a Doce Sabor: brigadeiros, bolos, trufas, brownies e muito mais. Escolha seus doces favoritos!">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>🍫 DOCE ENCANTO</h1>
-    <p>O sabor que transforma momentos em felicidade.</p>
-</header>
+    <!-- CABEÇALHO -->
+    <header class="topo" id="inicio">
+        <div class="logo">
+            <span class="icone-logo">✦</span>
+            <h1>DOCE SABOR</h1>
+            <p>O sabor que transforma momentos.</p>
+        </div>
 
-<nav>
-    <a href="#">Início</a>
-    <a href="#produtos">Produtos</a>
-    <a href="#pedido">Pedidos</a>
-    <a href="#contato">Contato</a>
-</nav>
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Nossos doces</a>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#pedido">Fazer pedido</a>
+        </nav>
+    </header>
 
-<section class="banner">
-    <h2>Os melhores doces da cidade!</h2>
+    <main>
 
-    <p>
-        Brigadeiros, brownies, trufas e bolos de pote feitos com muito carinho.
-    </p>
+        <!-- APRESENTAÇÃO -->
+        <section class="banner">
+            <div class="banner-conteudo">
+                <p class="subtitulo">DOCES FEITOS COM CARINHO</p>
 
-    <button>Peça Agora</button>
+                <h2>Um mundo de sabores<br>
+                    para adoçar sua vida.
+                </h2>
 
-</section>
+                <p>
+                    Brigadeiros, bolos, trufas e muitas outras delícias
+                    esperando por você.
+                </p>
 
-<section id="produtos">
+                <a href="#produtos" class="botao">
+                    CONHEÇA NOSSOS DOCES
+                </a>
+            </div>
+        </section>
 
-<h2>Nossos Doces</h2>
+        <!-- CATEGORIAS -->
+        <section class="categorias">
+            <h2>Explore nossas delícias</h2>
 
-<div class="cards">
+            <p>
+                Encontre o doce perfeito para cada ocasião.
+            </p>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?w=500">
-<h3>Brigadeiro Gourmet</h3>
-<p>Chocolate nobre.</p>
-<h4>R$ 3,50</h4>
-<button>Comprar</button>
-</div>
+            <div class="lista-categorias">
+                <a href="#brigadeiros">Brigadeiros</a>
+                <a href="#bolos">Bolos</a>
+                <a href="#trufas">Trufas</a>
+                <a href="#brownies">Brownies</a>
+                <a href="#presentes">Caixas de doces</a>
+            </div>
+        </section>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476f?w=500">
-<h3>Brownie</h3>
-<p>Macio e recheado.</p>
-<h4>R$ 8,00</h4>
-<button>Comprar</button>
-</div>
+        <!-- CATÁLOGO -->
+        <section class="catalogo" id="produtos">
+            <div class="titulo-secao">
+                <p class="subtitulo">NOSSO CATÁLOGO</p>
+                <h2>Doces que encantam</h2>
+                <p>Escolha seus favoritos e prepare seu pedido.</p>
+            </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=500">
-<h3>Bolo de Pote</h3>
-<p>Vários sabores.</p>
-<h4>R$ 12,00</h4>
-<button>Comprar</button>
-</div>
+            <div class="grade-produtos">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500">
-<h3>Trufa</h3>
-<p>Recheio cremoso.</p>
-<h4>R$ 5,00</h4>
-<button>Comprar</button>
-</div>
+                <!-- BRIGADEIRO -->
+                <article class="produto" id="brigadeiros">
+                    <img
+                        src="https://images.unsplash.com/photo-1581798459219-318e76aecc7b?auto=format&fit=crop&w=700&q=80"
+                        alt="Doces de chocolate"
+                        loading="lazy"
+                    >
 
-</div>
+                    <div class="produto-info">
+                        <span class="categoria">CHOCOLATES</span>
+                        <h3>Brigadeiros Gourmet</h3>
+                        <p>Docinhos cremosos para deixar seu dia mais doce.</p>
+                        <p class="preco">Preço sob consulta</p>
+                        <a class="botao-produto" href="#pedido">
+                            Tenho interesse
+                        </a>
+                    </div>
+                </article>
 
-</section>
+                <!-- BOLO -->
+                <article class="produto" id="bolos">
+                    <img
+                        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80"
+                        alt="Bolo decorado"
+                        loading="lazy"
+                    >
 
-<section id="pedido">
+                    <div class="produto-info">
+                        <span class="categoria">ESPECIAIS</span>
+                        <h3>Bolos Decorados</h3>
+                        <p>Bolos para aniversários, festas e comemorações.</p>
+                        <p class="preco">Preço sob consulta</p>
+                        <a class="botao-produto" href="#pedido">
+                            Tenho interesse
+                        </a>
+                    </div>
+                </article>
 
-<h2>Faça seu Pedido</h2>
+                <!-- TRUFAS -->
+                <article class="produto" id="trufas">
+                    <img
+                        src="https://images.unsplash.com/photo-1548907040-4d42bfc8a3b5?auto=format&fit=crop&w=700&q=80"
+                        alt="Bombons e chocolates"
+                        loading="lazy"
+                    >
 
-<form>
+                    <div class="produto-info">
+                        <span class="categoria">CHOCOLATES</span>
+                        <h3>Trufas Recheadas</h3>
+                        <p>Chocolate com recheios deliciosos e variados.</p>
+                        <p class="preco">Preço sob consulta</p>
+                        <a class="botao-produto" href="#pedido">
+                            Tenho interesse
+                        </a>
+                    </div>
+                </article>
 
-<input type="text" placeholder="Seu nome">
+                <!-- BROWNIES -->
+                <article class="produto" id="brownies">
+                    <img
+                        src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=80"
+                        alt="Brownies de chocolate"
+                        loading="lazy"
+                    >
 
-<input type="tel" placeholder="Telefone">
+                    <div class="produto-info">
+                        <span class="categoria">ARTESANAIS</span>
+                        <h3>Brownies</h3>
+                        <p>Brownies de chocolate para os amantes de doces.</p>
+                        <p class="preco">Preço sob consulta</p>
+                        <a class="botao-produto" href="#pedido">
+                            Tenho interesse
+                        </a>
+                    </div>
+                </article>
 
-<input type="text" placeholder="Endereço">
+                <!-- CUPCAKES -->
+                <article class="produto">
+                    <img
+                        src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80"
+                        alt="Sobremesa doce"
+                        loading="lazy"
+                    >
 
-<input type="text" placeholder="Cidade">
+                    <div class="produto-info">
+                        <span class="categoria">DELICADOS</span>
+                        <h3>Cupcakes e Sobremesas</h3>
+                        <p>Pequenas delícias para adoçar qualquer ocasião.</p>
+                        <p class="preco">Preço sob consulta</p>
+                        <a class="botao-produto" href="#pedido">
+                            Tenho interesse
+                        </a>
+                    </div>
+                </article>
 
-<input type="text" placeholder="CEP">
+                <!-- CAIXAS DE PRESENTE -->
+                <article class="produto" id="presentes">
+                    <img
+                        src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=700&q=80"
+                        alt="Presente em caixa decorada"
+                        loading="lazy"
+                    >
 
-<select>
+                    <div class="produto-info">
+                        <span class="categoria">PRESENTES</span>
+                        <h3>Caixas de Doces</h3>
+                        <p>Uma seleção especial para presentear quem você ama.</p>
+                        <p class="preco">Preço sob consulta</p>
+                        <a class="botao-produto" href="#pedido">
+                            Tenho interesse
+                        </a>
+                    </div>
+                </article>
 
-<option>Forma de pagamento</option>
+            </div>
+        </section>
 
-<option>Pix</option>
+        <!-- SOBRE A LOJA -->
+        <section class="sobre" id="sobre">
+            <p class="subtitulo">NOSSA HISTÓRIA</p>
+            <h2>Feito para adoçar seus melhores momentos.</h2>
 
-<option>Cartão</option>
+            <p>
+                A Doce Sabor nasceu para reunir sabores especiais,
+                carinho e alegria em cada doce. Queremos fazer parte
+                dos seus momentos felizes, das comemorações e dos
+                pequenos prazeres do dia a dia.
+            </p>
+        </section>
 
-<option>Dinheiro</option>
+        <!-- PEDIDOS -->
+        <section class="pedido" id="pedido">
+            <p class="subtitulo">SEU DOCE FAVORITO ESPERA POR VOCÊ</p>
+            <h2>Faça seu pedido</h2>
 
-</select>
+            <p>
+                Entre em contato para consultar preços, sabores,
+                disponibilidade e opções de entrega.
+            </p>
 
-<button>Finalizar Pedido</button>
+            <form class="formulario-pedido" action="#" method="get">
+                <label for="nome">Seu nome</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
 
-</form>
+                <label for="telefone">Seu telefone</label>
+                <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="(00) 00000-0000"
+                    required
+                >
 
-</section>
+                <label for="doce">Qual doce você deseja?</label>
+                <select id="doce" name="doce" required>
+                    <option value="">Escolha um doce</option>
+                    <option>Brigadeiros Gourmet</option>
+                    <option>Bolos Decorados</option>
+                    <option>Trufas Recheadas</option>
+                    <option>Brownies</option>
+                    <option>Cupcakes e Sobremesas</option>
+                    <option>Caixas de Doces</option>
+                    <option>Outros doces</option>
+                </select>
 
-<section id="contato">
+                <label for="quantidade">Quantidade desejada</label>
+                <input
+                    type="number"
+                    id="quantidade"
+                    name="quantidade"
+                    min="1"
+                    value="1"
+                    required
+                >
 
-<h2>Contato</h2>
+                <label for="endereco">Endereço de entrega</label>
+                <input
+                    type="text"
+                    id="endereco"
+                    name="endereco"
+                    placeholder="Rua, número, bairro e cidade"
+                    required
+                >
 
-<p>📍 Campo Maior - PI</p>
+                <label for="observacoes">Observações</label>
+                <textarea
+                    id="observacoes"
+                    name="observacoes"
+                    rows="4"
+                    placeholder="Informe o sabor ou os detalhes do pedido"
+                ></textarea>
 
-<p>📱 (86) 99999-9999</p>
+                <button type="button" class="botao">
+                    CONTINUAR PARA O PEDIDO
+                </button>
 
-<p>📧 doceencanto@email.com</p>
+                <p class="aviso">
+                    O envio do pedido será configurado na próxima etapa.
+                </p>
+            </form>
+        </section>
 
-</section>
+    </main>
 
-<footer>
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <h2>DOCE SABOR</h2>
+        <p>Pequenos doces, grandes momentos.</p>
+        <p>&copy; 2026 Doce Sabor. Todos os direitos reservados.</p>
+    </footer>
 
-<p>© 2026 Doce Encanto - Todos os direitos reservados.</p>
-
-</footer>
-<script src="script.js"></script>
 </body>
 </html>
